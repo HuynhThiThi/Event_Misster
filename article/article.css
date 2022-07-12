@@ -1,3 +1,10 @@
+@font-face {
+    font-family: 'Kanit-Medium';
+    src: url(./assets/fonts/Kanit/Kanit-Medium.ttf);
+    
+    font-weight: normal;
+    font-style: normal;
+}
 @-ms-viewport {
     width:device-width
 }
@@ -25,7 +32,7 @@ html {
 }
 body {
     line-height:1;
-    font-family:sans-serif;
+    font-family: 'Kanit-Medium';
     text-align:left
 }
 [tabindex="-1"]:focus:not(:focus-visible) {
@@ -1491,11 +1498,11 @@ hr.split--giant {
 }
 .article__title,.article h1 {
     font-size:1.8em;
-    font-weight:bold;
+    font-family: 'Kanit-Medium';
     line-height:1.4;
     padding-bottom:12px;
     border-bottom:1px solid #eee;
-    color:#ff2f6a;
+    color:#c72bc4;
     text-align:center;
     font-family:Arsenal
 }
@@ -1524,6 +1531,10 @@ hr.split--giant {
     color:#222;
     line-height:1.4
 }
+.article__content p {
+font-size: 18px;
+color: #2528b2;
+}
 .article__content *:not(:only-child):not(li) {
     margin-bottom:12px
 }
@@ -1542,9 +1553,9 @@ hr.split--giant {
 }
 .article__content h2 {
     font-size:1.4em;
-    font-weight:bold;
+    font-family: 'Kanit-Medium';
     line-height:1.4;
-    color:#ff2f6a
+    color:#d835d5;
 }
 .article__content h2:before {
     content:"";
@@ -1555,7 +1566,7 @@ hr.split--giant {
 }
 .article__content h3 {
     font-size:1.3em;
-    font-weight:bold;
+    font-family: 'Kanit-Medium';
     line-height:1.4;
     color:#4200ff
 }
@@ -1568,21 +1579,21 @@ hr.split--giant {
 }
 .article__content h4 {
     font-size:1.2em;
-    font-weight:bold;
+    font-family: 'Kanit-Medium';
     line-height:1.4;
-    color:#ff2f6a
+    color:#c72bc4
 }
 .article__content h5 {
     font-size:1.1em;
-    font-weight:bold;
+   font-family: 'Kanit-Medium';
     line-height:1.4;
-    color:#4200ff
+    color:#c72bc4;
 }
 .article__content h6 {
     font-size:1em;
-    font-weight:bold;
+    font-family: 'Kanit-Medium';
     line-height:1.4;
-    color:#ff2f6a
+    color:#c72bc4
 }
 .article__content a {
     color:#4579c9;
@@ -1597,7 +1608,7 @@ hr.split--giant {
     display:block;
     background:rgba(69,121,201,0.05);
     color:#4579c9;
-    font-weight:bold;
+    font-family: 'Kanit-Medium';
     padding:20px;
     border:0px
 }
@@ -1655,7 +1666,7 @@ hr.split--giant {
     margin:0 auto 0
 }
 .article__content table thead {
-    background:#ff2f6a;
+    background:#c72bc4;
     color:#FFF;
     font-weight:bold
 }
@@ -1665,6 +1676,6 @@ hr.split--giant {
     vertical-align:middle
 }
 .article__content table tfoot {
-    background:#ff2f6a;
+    background:#c72bc4;
     color:#fff
 }
