@@ -7,8 +7,8 @@ $( document ).ready(function() {
       loop:true,
       slideMargin: 0,
       thumbItem: 3,
-      galleryMargin: 10,
-     thumbMargin: 10,
+      galleryMargin: 15,
+     thumbMargin: 20,
       }; 
  
   h_slider = $('#lightSlider').lightSlider($h_slider_options);
@@ -18,15 +18,24 @@ $( document ).ready(function() {
   $().fancybox({
     selector : $selector,
     backFocus : false, 
-    buttons : [ 
-      'slideShow',
-      'share',
-      'zoom',
-      'fullScreen',
-      'thumbs',
-      'download',
+    buttons : [          
       'close'
-    ]
+    ],
+    btnTpl: {
+      close:
+      '<button data-fancybox-close class="fancybox-button fancybox-button--close" title="{{CLOSE}}">' +
+      '<div class="icon-close"></div>' +
+      "</button>",
+      arrowLeft:
+      '<button data-fancybox-prev class="fancybox-button fancybox-button--arrow_left" title="{{PREV}}">' +
+      '<div class="icon-prev">icon</div>' +
+      "</button>",
+
+    arrowRight:
+      '<button data-fancybox-next class="fancybox-button fancybox-button--arrow_right" title="{{NEXT}}">' +
+      '<div class="icon-next">icon</div>' +
+      "</button>",
+    }
   });
 });
  

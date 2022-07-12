@@ -4355,6 +4355,19 @@ height: 57px;
     clip-path: polygon(35px 0, 95.8% 0, 100% 38px, 100% 92.4%, 95.8% 100%, 34px 100%, 0 92.4%, 0 38px);
     overflow: hidden
 }
+.register .thumb-big:after {
+    content: "";
+    display: block;
+    position: absolute;
+    pointer-events: none;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;    
+    background: url(assets/images/bg/Frame-anhchinh.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat
+}
 
 .thumb-big .note-img-big {
     font-family: 'Kanit' !important;
@@ -4383,20 +4396,93 @@ height: 57px;
         margin: 0 0 0px
     }
 }
-li.lslide.active {
-    background-image: url(assets/images/bg/Frame-anhchinh.png);
+.lSSlideOuter .lSPager.lSGallery li {
+    border: 2px solid #1a86ff;
+}
+.lSSlideWrapper.usingCss{
+    position: relative;
+    margin: 0 0 32px;
+    width: 100%;    
+    flex-wrap: wrap;
     clip-path: polygon(35px 0, 95.8% 0, 100% 38px, 100% 92.4%, 95.8% 100%, 34px 100%, 0 92.4%, 0 38px);
+    overflow: hidden
+}
+.lSSlideWrapper.usingCss:after {
+    content: "";
+    display: block;
+    position: absolute;
+    pointer-events: none;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;    
+    background: url(assets/images/bg/Frame-anhchinh.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat
+}
+
+element.style {
+    width: 815.51px;
+    margin-right: 0px;
+}
+.fancybox-button--arrow_left .icon-prev {
+    font-size: 0;
+    background-image: url(assets/images/sprites/_sprites_button.png);
+    background-position: -278px -524px !important; 
+    width: 36px !important;
+    height: 67px !important;
+}
+.fancybox-button--arrow_right .icon-next{
+    font-size: 0;
+    background-image: url(assets/images/sprites/_sprites_button.png);
+    background-position: -354px -523px; 
+width:39px;
+height: 66px;
+}
+.fancybox-button svg {
+    display: none !important;
+}
+.fancybox-button {
+    background: transparent !important;
+}
+.fancybox-button {
+    background: rgba(30, 30, 30, .6);
+    border: 0;
+    border-radius: 0;
+    box-shadow: none;
+    cursor: pointer;
+    display: inline-block;
+   height: 100%;
+   width: 100%;
+    margin: 0;
+    padding: 10px;
+    position: relative;
+    transition: color .2s;
+    vertical-align: top;
+    visibility: inherit;
+    
+}
+.fancybox-button--close .icon-close{
+    background-image: url(assets/images/sprites/_sprites_button.png);
+    background-position: -714px -292px; 
+width: 107px !important;
+height: 92px !important;
+}
+li.lslide {
+    margin-right: 5px !important;
 }
 li.lslide.active img {
     width: 100%;
 }
 .lSAction > .lSNext {
+    right: 20px !important;
     background-image: url(assets/images/sprites/_sprites_button.png);
     background-position: -357px -522px !important; 
     width: 36px;
     height: 67px;
 }
 .lSAction > .lSPrev {
+    left: 20px !important;
     background-image: url(assets/images/sprites/_sprites_button.png);
     background-position: -278px -524px !important; 
     width: 36px;
@@ -4406,8 +4492,6 @@ li.lslide.active img {
    
     display: block;
     top: 50%;
-   
-   
     cursor: pointer;
     position: absolute;
     z-index: 99;
@@ -4949,14 +5033,24 @@ p.note-cnnd {
 }
 
 .candidate__statics ul {
-    /* clip-path: polygon(100% 0%, 100% 80%, 97% 100%, 0 100%, 0 20%, 3% 0); */
+    clip-path: polygon(100% 0%, 100% 80%, 97% 100%, 0 100%, 0 20%, 3% 0); 
     background-image: url(./assets/images/icon/khung-vote.png);
     background-size: 100% 100%;
     overflow: hidden;
     display: flex;
     width: fit-content
 }
-
+.candidate__statics ul::before {
+    content: "";
+    display: block;
+    position: relative;
+    top: 2px;
+    left: 2px;
+    height: 92%;
+    width: 92%;
+    background-color: #283f94;
+    clip-path: inherit;
+}
 .candidate__statics {
     margin-right: 30px;
 }
