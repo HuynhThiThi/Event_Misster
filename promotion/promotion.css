@@ -76,9 +76,11 @@
 .d-flex {
     display: flex;
 }
+
 .justify-content-center {
     justify-content: center;
 }
+
 a,
 abbr,
 acronym,
@@ -3510,7 +3512,7 @@ body.body-article {
     position: fixed;
     top: 0;
     left: 195px;
-    width: calc(100% - 230px);
+    width: calc(100% - 195px);
     height: 100%;
     padding: 20px 30px 30px 0;
     overflow: auto
@@ -3525,6 +3527,7 @@ body.body-article {
         padding: 0px 30px 30px 30px
     }
 }
+
 .main-info .main__header {
     position: relative;
     display: flex;
@@ -3532,7 +3535,8 @@ body.body-article {
     align-items: flex-start;
     align-content: center;
     margin-bottom: 25px
-} 
+}
+
 .main__header {
     position: relative;
     display: flex;
@@ -3552,17 +3556,29 @@ body.body-article {
         width: 70%
     }
 }
+/* #lightSlider li:nth-child(2) {    
+    border: none;
 
+}
+#lightSlider li {   
+    border: 1px solid #1a86ff;
+} */
 .title {
     font-size: 0px;
     pointer-events: none;
     z-index: 50
 }
-
 .title--register {
-    background-image: url(assets/images/sprites/dky_du_thi.png);
-    width: 659px;
-    height: 90px;
+    background-image: url(assets/images/sprites/_sprites_shape.png);
+    background-position: -14px -589px; 
+    width: 656px;
+    height: 92px;
+}
+.title--infoDetail {
+    background-image: url(assets/images/sprites/_sprites_shape.png);
+    background-position: -3px -194px; 
+width: 662px;
+height: 92px;
 }
 
 .title--rank {
@@ -3608,12 +3624,14 @@ body.body-article {
 .btni:hover {
     filter: brightness(110%)
 }
+
 .btni--rules.btn-position {
     position: absolute;
     right: 0;
-  
+
 }
-.btni--rules {   
+
+.btni--rules {
     background-image: url(./assets/images/sprites/_sprites_button.png);
     background-position: -488px -385px;
     width: 268px;
@@ -3638,7 +3656,7 @@ body.body-article {
 
 .btni--back {
     background-image: url(assets/images/sprites/_sprites_button.png);
-    background-position: 0px -513px; 
+    background-position: 0px -513px;
     width: 279px;
     height: 83px;
 }
@@ -3650,12 +3668,17 @@ body.body-article {
 }
 
 .btni--action {
-    background-image: url(assets/_sprites-common.png);
-    background-position: 0px -283px;
-    width: 270px;
-    height: 120px
+    background-image: url(assets/images/sprites/_sprites_shape.png);
+    background-position: -6px -7px; 
+width: 349px;
+height: 90px;
 }
-
+.btni--history {
+    background-image: url(assets/images/sprites/_sprites_shape.png);
+    background-position: -9px -104px; 
+width: 349px;
+height: 90px;
+}
 .btni--edit {
     background-image: url(assets/_sprites-common.png);
     background-position: -450px -213px;
@@ -3692,11 +3715,13 @@ body.body-article {
     font-size: 0px;
     pointer-events: none;
     margin-left: 10px;
-    background-image: url(assets/images/sprites/_sprites_button.png);
-    background-position: -636px -458px; 
-width: 56px;
-height: 57px;
+    background-image: url(assets/images/sprites/_sprites_shape.png);
+    background-position: -363px -100px;
+    width: 53px;
+    height: 45px;
+    margin-top: 3px;
 }
+
 /* .icon-rank {
     display: block;
     font-size: 0px;
@@ -4358,21 +4383,39 @@ height: 57px;
         margin: 0 0 0px
     }
 }
-
-.register .thumb-big:after {
-    content: "";
-    display: block;
-    position: absolute;
-    pointer-events: none;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: url(assets/images/bg/Frame-anhchinh.png);
-    background-size: 100% 100%;
-    background-repeat: no-repeat
+li.lslide.active {
+    background-image: url(assets/images/bg/Frame-anhchinh.png);
+    clip-path: polygon(35px 0, 95.8% 0, 100% 38px, 100% 92.4%, 95.8% 100%, 34px 100%, 0 92.4%, 0 38px);
 }
-
+li.lslide.active img {
+    width: 100%;
+}
+.lSAction > .lSNext {
+    background-image: url(assets/images/sprites/_sprites_button.png);
+    background-position: -357px -522px !important; 
+    width: 36px;
+    height: 67px;
+}
+.lSAction > .lSPrev {
+    background-image: url(assets/images/sprites/_sprites_button.png);
+    background-position: -278px -524px !important; 
+    width: 36px;
+    height: 67px;
+}
+.lSAction > a {
+   
+    display: block;
+    top: 50%;
+   
+   
+    cursor: pointer;
+    position: absolute;
+    z-index: 99;
+    margin-top: -16px;
+    opacity: 0.5;
+    -webkit-transition: opacity 0.35s linear 0s;
+    transition: opacity 0.35s linear 0s;
+}
 .register .thumb-big img {
     display: block;
     position: absolute;
@@ -4433,11 +4476,13 @@ height: 57px;
         font-size: 30px
     }
 }
+
 .text-note-info {
     font-family: "Kanit";
     color: #ffd145 !important;
-    font-size: 20px;
+    font-size: 20px;   
 }
+
 .register .label {
     font-size: 0px;
     display: none
@@ -4776,6 +4821,7 @@ p.note-cnnd {
 .register .list-info>li:nth-child(4) {
     margin: 0 0 5px;
 }
+
 .detail-info .list-info>li:nth-child(4) {
     display: block;
     grid-template-columns: 50% auto;
@@ -4905,13 +4951,16 @@ p.note-cnnd {
 .candidate__statics ul {
     /* clip-path: polygon(100% 0%, 100% 80%, 97% 100%, 0 100%, 0 20%, 3% 0); */
     background-image: url(./assets/images/icon/khung-vote.png);
+    background-size: 100% 100%;
     overflow: hidden;
     display: flex;
     width: fit-content
 }
-.candidate__statics  {
+
+.candidate__statics {
     margin-right: 30px;
 }
+
 /* .candidate__statics ul li:not(:last-child) {
     border-right: 2px solid #FFF
 } */
@@ -4931,10 +4980,21 @@ p.note-cnnd {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 3px 23px;     
+    padding: 3px 23px;
     color: #fff;
     font-size: 40px;
     text-align: center
+}
+
+.candidate__action--grid .value-heart {
+    font-family: 'Kanit';
+    margin-left: 20px;
+    font-size: 40px;
+    font-weight: bold;
+    color: #ff69cf;
+    display: flex;
+    align-items: center;
+    align-content: center
 }
 /* .candidate__label.label-vote {
     background: #3e6fff;
@@ -4946,10 +5006,12 @@ p.note-cnnd {
     display: grid;
     grid-template-columns: 35% 40%;
     grid-column-gap: 10px;
-    width: 100%;    
+    align-items: center;
+    width: 100%;
     color: #fff;
     font-size: 26px;
 }
+
 .candidate__action p {
     display: flex;
     align-items: center;
@@ -4957,16 +5019,7 @@ p.note-cnnd {
     margin-bottom: 0px
 }
 
-.candidate__action p strong { 
-    font-family: 'Kanit';
-    margin-left: 20px;
-    font-size: 40px;
-    font-weight: bold;
-    color: #ff69cf;
-    display: flex;
-    align-items: center;
-    align-content: center
-}
+
 
 .candidate__action .btni--action {
     display: inline-flex;
@@ -4975,21 +5028,21 @@ p.note-cnnd {
 
 .candidate__vote_adjustment {
     display: inline-flex;
-    background-image: url(./assets/images/icon/input-value.png);  
+    background-image: url(./assets/images/icon/input-value.png);
     margin-top: 10px;
     width: 400px;
     height: 50px;
 }
 
 .candidate__vote_adjustment input[type="number"] {
-    margin: 0 10px;
+    font-family: "Kanit";
     padding: 0 10px;
     border: none;
     background: transparent;
     text-align: center;
-    font-size: 34px;
-    color: #060b39;
-    width: 220px
+    font-size: 35px;
+    color: #fff;
+    width: 277px
 }
 
 .candidate__vote_adjustment .btni {
@@ -5000,16 +5053,16 @@ p.note-cnnd {
 
 .candidate__vote_adjustment .btni--sub {
     background-image: url(assets/images/icon/btn-plus.png);
-    
+
     width: 60px;
     height: 50px
 }
 
 .candidate__vote_adjustment .btni--add {
-    background-image: url(assets/_sprites-common.png);
-    background-position: -1093px -140px;
-    width: 45px;
-    height: 45px
+    background-image: url(assets/images/sprites/_sprites_shape.png);
+    background-position: -534px -454px;
+    width: 62px;
+    height: 53px;
 }
 
 #popup_rules .popup__close {
@@ -5088,16 +5141,17 @@ p.note-cnnd {
 }
 
 #popup_agree .popup__wrapper {
-    top: 50%;   
+    top: 50%;
     transform: translateY(-50%);
     overflow-x: hidden;
     overflow-y: hidden;
     padding: 25px 10px 30px;
-   height: auto;
+    height: auto;
     width: 100%;
     left: 0;
     position: absolute
 }
+
 .popup--default .popup__wrapper {
     height: calc(100% - 20px);
     overflow-x: hidden;
@@ -5108,6 +5162,7 @@ p.note-cnnd {
     left: 0;
     position: absolute
 }
+
 #popup_rules .title {
     font-family: 'Kanit-SemiBold';
     display: flex;
