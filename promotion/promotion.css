@@ -76,7 +76,9 @@
 .d-flex {
     display: flex;
 }
-
+.justify-content-center {
+    justify-content: center;
+}
 a,
 abbr,
 acronym,
@@ -3644,7 +3646,7 @@ body.body-article {
 .btni--video {
     background-image: url(assets/images/icon/khung-video.png);
     width: 270px;
-    height: 130px
+    height: 120px
 }
 
 .btni--action {
@@ -4682,7 +4684,7 @@ p.note-cnnd {
 .register .list-upload2 {
     width: 100%;
     display: grid;
-    grid-template-columns: auto auto;
+    grid-template-columns: 40% 40%;
     grid-column-gap: 32px;
     grid-row-gap: 32px;
     grid-area: 2 / 1 / span 1 / span 2;
@@ -4885,47 +4887,41 @@ p.note-cnnd {
 }
 
 .candidate__hr {
-    border-color: #9c7aff
+    background-image: url(./assets/images/icon/line.png);
+    height: 1px;
+    width: 807px;
+    border: 0;
 }
 
 .candidate__meta {
     width: 100%;
     display: flex;
-    justify-content: space-between;
+    justify-content: start;
     align-items: center;
     align-content: center;
-    margin-bottom: 50px
+    margin-bottom: 20px
 }
 
 .candidate__statics ul {
-    clip-path: polygon(100% 0%, 100% 80%, 97% 100%, 0 100%, 0 20%, 3% 0);
-    background: #3e6fff;
+    /* clip-path: polygon(100% 0%, 100% 80%, 97% 100%, 0 100%, 0 20%, 3% 0); */
+    background-image: url(./assets/images/icon/khung-vote.png);
     overflow: hidden;
     display: flex;
     width: fit-content
 }
-.candidate__statics ul::before {
-    content: "";
-    display: block;
-    position: relative;
-    top: 2px;
-    left: 2px;
-    height: 92%;
-    width: 92%;
-    background-color: #283f94;
-    clip-path: inherit;
+.candidate__statics  {
+    margin-right: 30px;
 }
-
-.candidate__statics ul li:not(:last-child) {
+/* .candidate__statics ul li:not(:last-child) {
     border-right: 2px solid #FFF
-}
+} */
 
 .candidate__label {
-    padding: 10px 20px;
-    background: #3e6fff;
+    padding: 10px 15px;
+    /* background: #3e6fff; */
     /* border-bottom: 2px solid #FFF; */
     color: #FFF;
-    font-size: 30px;
+    font-size: 26px;
     text-align: center;
     font-weight: lighter
 }
@@ -4935,25 +4931,38 @@ p.note-cnnd {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 10px 45px;
-    background: #2b439c;    
+    padding: 3px 23px;     
     color: #fff;
-    font-size: 45px;
+    font-size: 40px;
     text-align: center
 }
-
+/* .candidate__label.label-vote {
+    background: #3e6fff;
+}
+.candidate__label.label-rank {
+    background: #3259cc;  
+} */
+.candidate__action .candidate__action--grid>li {
+    display: grid;
+    grid-template-columns: 35% 40%;
+    grid-column-gap: 10px;
+    width: 100%;    
+    color: #fff;
+    font-size: 26px;
+}
 .candidate__action p {
     display: flex;
     align-items: center;
-    font-size: 30px;
+    font-size: 26px;
     margin-bottom: 0px
 }
 
-.candidate__action p strong {
+.candidate__action p strong { 
+    font-family: 'Kanit';
     margin-left: 20px;
-    font-size: 45px;
+    font-size: 40px;
     font-weight: bold;
-    color: #ffdd00;
+    color: #ff69cf;
     display: flex;
     align-items: center;
     align-content: center
@@ -4966,11 +4975,10 @@ p.note-cnnd {
 
 .candidate__vote_adjustment {
     display: inline-flex;
-    background: #dfebff;
-    padding: 5px;
-    border-radius: 30px;
+    background-image: url(./assets/images/icon/input-value.png);  
     margin-top: 10px;
-    width: fit-content
+    width: 400px;
+    height: 50px;
 }
 
 .candidate__vote_adjustment input[type="number"] {
@@ -4981,7 +4989,7 @@ p.note-cnnd {
     text-align: center;
     font-size: 34px;
     color: #060b39;
-    width: 120px
+    width: 220px
 }
 
 .candidate__vote_adjustment .btni {
@@ -4991,10 +4999,10 @@ p.note-cnnd {
 }
 
 .candidate__vote_adjustment .btni--sub {
-    background-image: url(assets/_sprites-common.png);
-    background-position: -1138px -140px;
-    width: 45px;
-    height: 45px
+    background-image: url(assets/images/icon/btn-plus.png);
+    
+    width: 60px;
+    height: 50px
 }
 
 .candidate__vote_adjustment .btni--add {
