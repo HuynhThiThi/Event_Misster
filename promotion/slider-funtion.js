@@ -1,7 +1,7 @@
 $ = jQuery;
 $( document ).ready(function() {
   
-  $h_slider_options =  {
+    $h_slider_options =  {
       gallery: true,
       item: 1,
       loop:true,
@@ -16,11 +16,25 @@ $( document ).ready(function() {
   $selector = '#lightSlider li:not(".clone") a';
   $selector += ',#lightSliderVertical li:not(".clone") a';
   $().fancybox({
+    width: 560,  // default 800
+    height: 340, // default 600
     selector : $selector,
     backFocus : false, 
     buttons : [          
       'close'
     ],
+    baseTpl:
+    '<div class="fancybox-container" role="dialog" tabindex="-1">' +
+    '<div class="fancybox-bg"></div>' +
+    '<div class="fancybox-inner">' +
+    '<div class="fancybox-infobar">' +
+    "</div>" +
+    '<div class="fancybox-toolbar">{{buttons}}</div>' +
+    '<div class="fancybox-navigation">{{arrows}}</div>' +
+    '<div class="fancybox-stage"></div>' +
+    '<div class="fancybox-caption"></div>' +
+    "</div>" +
+    "</div>",
     btnTpl: {
       close:
       '<button data-fancybox-close class="fancybox-button fancybox-button--close" title="{{CLOSE}}">' +
@@ -39,7 +53,7 @@ $( document ).ready(function() {
   });
 });
  
-$( window ).resize(function() {
-//  slider.destroy();
- h_slider = $('#ocassions-slider').lightSlider(h_slider_options);
-});
+// $( window ).resize(function() {
+// //  slider.destroy();
+//  h_slider = $('#ocassions-slider').lightSlider(h_slider_options);
+// });
