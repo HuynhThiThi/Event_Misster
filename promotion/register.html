@@ -9,8 +9,8 @@
 	<link href="promotion.css" rel="stylesheet">
 </head>
 
-<body>
-	<div id="wrapper" class="wrapper wrapper--landing floatingDesktopTopLeft floatingMobileTopLeft">
+<body class="wrapper wrapper--landing floatingDesktopTopLeft floatingMobileTopLeft">
+	<div>
 		<section id="frame1" class="section section--frame1 frame1 scrollFrame">
 			<div class="section__background">
 				<img data-src="assets/images/bg/bg-horizontal.png" class="desktop lazyload" alt="">
@@ -186,8 +186,10 @@
 												<div class="btn-form">
 													<input type="submit" class="btni btni--submit show-thongbao-cancel"
 														name="btnSubmit">
-													<input type="submit" class="btni btni--submit show-thongbao-ok"
-														name="btnSubmit">
+													<a href="#popup_agree" data-lightbox="">
+														<input type="submit" class="btni btni--submit show-thongbao-ok"
+														name="btnSubmit" >
+													</a>
 												</div>
 											</div>
 										</fieldset>
@@ -200,41 +202,44 @@
 				</div>
 			</div>
 		</section>
-	</div>
-	<div id="popup_rules" class="popup popup--default ">
-		<div class="popup__background"></div>
-		<div class="popup__content">
-			<div class="popup__wrapper">
-				<h2 class="title title--auth">
-					Thể lệ
-				</h2>
-				<div class="popup__iframe">
-					<iframe src="../article/article.html" frameborder="0"></iframe>
+
+		<!-- popup -->
+		<div id="popup_rules" class="popup popup--default active">
+			<div class="popup__background"></div>
+			<div class="popup__content">
+				<div class="popup__wrapper">
+					<h2 class="title title--auth">
+						Thể lệ
+					</h2>
+					<div class="popup__iframe">
+						<iframe src="../article/article.html" frameborder="0"></iframe>
+					</div>
 				</div>
+				<span class="popup__close close">X</span>
+			</div>
+		</div>
+	
+		<div id="popup_agree" class="popup popup--default pm__module pm__condition-module">
+			<div class="popup__background"></div>
+			<div class="popup__content">
+				<div class="popup__wrapper">
+					<h2 class="title title--info">
+						Thông báo
+					</h2>
+					<div class="tab-content">
+						<p>Bài thi đang được xét duyệt</p>
+					</div>
+					<div class="tab-submit floatingDesktopTopCenter">
+						<div  class="btni btn-ok">Ok</div>
+					</div>
+	
+				</div>
+	
 			</div>
 			<span class="popup__close close">X</span>
 		</div>
 	</div>
-
-	<div id="popup_agree" class="popup popup--default pm__module pm__condition-module">
-		<div class="popup__background"></div>
-		<div class="popup__content">
-			<div class="popup__wrapper">
-				<h2 class="title title--info">
-					Thông báo
-				</h2>
-				<div class="tab-content">
-					<p>Bài thi đang được xét duyệt</p>
-				</div>
-				<div class="tab-submit floatingDesktopTopCenter">
-					<div  class="btni btn-ok">Ok</div>
-				</div>
-
-			</div>
-
-		</div>
-		<span class="popup__close close">X</span>
-	</div>
+	
 
 	
 

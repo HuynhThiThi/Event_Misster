@@ -4421,20 +4421,43 @@ body.compensate-for-scrollbar {
 }
 
 .fancybox-container {
-  -webkit-backface-visibility: hidden;
-  height: 100%;
-  left: 0;
+  top: 0;
+  right: 0;
+  left: auto;
+  width: calc(100% - 150px);
+  height: 100vh;
   outline: none;
   position: fixed;
-  -webkit-tap-highlight-color: transparent;
-  top: 0;
+  -webkit-tap-highlight-color: transparent;   
   -ms-touch-action: manipulation;
   touch-action: manipulation;
-  transform: translateZ(0);
-  width: 100%;
+  transform: translateZ(0); 
   z-index: 99992;
 }
+@media (orientation: portrait) {
+  
+  .fancybox-container {
+    top: auto;
+    bottom: 0;
+    right: 0;
+    width: 100% !important;
+    height: calc(100% - 175px) !important;
+    outline: none;
+    position: fixed;
+    -webkit-tap-highlight-color: transparent;   
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+    transform: translateZ(0); 
+    z-index: 99992;
+  }
+  
 
+.fancybox-slide--image {
+  overflow: hidden;
+  margin: 100px 0 !important;
+  padding: 0 !important;
+}
+}
 .fancybox-container * {
   box-sizing: border-box;
 }
@@ -4509,10 +4532,9 @@ body.compensate-for-scrollbar {
 }
 
 .fancybox-toolbar {
-  right: 0;
+  right: -10%;
   top: 0;
 }
-
 .fancybox-stage {
   direction: ltr;
   overflow: visible;
@@ -4640,8 +4662,7 @@ body.compensate-for-scrollbar {
   max-height: none;
   max-width: none;
   padding: 0;
-  position: absolute;
-  top: 50%;
+  position: absolute; 
   left: 50%;
   transform: translate(-50%, -50%);
   -webkit-user-select: none;
@@ -4755,7 +4776,7 @@ body.compensate-for-scrollbar {
   background-position: -278px -524px !important;
   width: 36px !important;
   height: 67px !important;
-  transform: scale(0.8);
+  
 
 }
 
@@ -4765,7 +4786,7 @@ body.compensate-for-scrollbar {
   background-position: -316px -521px;
   width: 39px;
   height: 70px;
-  transform: scale(0.8);
+  
 }
 
 .fancybox-button--arrow_right[disabled] .icon-next {
@@ -4774,7 +4795,7 @@ body.compensate-for-scrollbar {
   background-position: -355px -521px !important;
   width: 39px !important;
   height: 70px !important;
-  transform: scale(0.8);
+  
 
 }
 
@@ -4784,7 +4805,7 @@ body.compensate-for-scrollbar {
   background-position: -394px -522px !important;
   width: 39px !important;
   height: 70px !important;
-  transform: scale(0.8);
+ 
 }
 
 
@@ -4885,15 +4906,12 @@ body.compensate-for-scrollbar {
 }
 
 .fancybox-navigation .fancybox-button--arrow_left {
-  left: 0;
-  left: env(safe-area-inset-left);
-  padding: 31px 26px 31px 6px;
+  left: -5%;   
 }
 
-.fancybox-navigation .fancybox-button--arrow_right {
-  padding: 31px 6px 31px 26px;
-  right: 0;
-  right: env(safe-area-inset-right);
+.fancybox-navigation .fancybox-button--arrow_right {  
+  right: -5%;
+ 
 }
 
 /* Caption */
@@ -4919,6 +4937,7 @@ body.compensate-for-scrollbar {
   text-align: center;
   z-index: 99996;
 }
+
 
 @supports (padding: max(0px)) {
   .fancybox-caption {

@@ -11,12 +11,12 @@
 	<!-- <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css'><link rel="stylesheet" href="./style.css"> -->
 </head>
 
-<body>
-	<div id="wrapper" class="wrapper wrapper--landing floatingDesktopTopLeft floatingMobileTopLeft">
+<body class="wrapper wrapper--landing floatingDesktopTopLeft floatingMobileTopLeft">
+	<div >
 		<section id="frame1" class="section section--frame1 frame1 scrollFrame">
 			<div class="section__background">
 				<img data-src="assets/images/bg/bg-horizontal.png" class="desktop lazyload" alt="">
-				<img data-src="assets/images/bg/bg-vertical.jpg" class="mobile lazyload" alt="">
+				<img data-src="assets/images/bg/bg-vertical.png" class="mobile lazyload" alt="">
 			</div>
 			<div class="section__content">
 				<div class="container">
@@ -44,59 +44,17 @@
 						</div>
 						<div class="main main-info">
 							<div class="main__header">
-								<a href="#" class="btni btni--back">TRỞ VỀ</a>
+								<a href="#" class="btni btni--back desktop">TRỞ VỀ</a>
 								<h1 class="title title--infoDetail">ĐĂNG KÝ DỰ THI</h1>
-								<a href="#popup_rules" data-lightbox class="btni btni--rules">THỂ LỆ</a>
+								<a href="#popup_rules" data-lightbox class="btni btni--rules desktop">THỂ LỆ</a>
 							</div>
 							<div class="main__content">
 								<div class="register detail-info">
 									<form action="#" method="post" class="block-vote">
 										<fieldset>
 											<!--cot hinh anh-->
-											<div class="block-img">
-												<!-- <div class="swiper-container gallery-top">
-													<div class="swiper-wrapper thumb-big" id="img-big">
-													  <div class="swiper-slide">
-														<img class="" src="assets/images/data/info-1.png" alt="" />
-													  </div>
-													  
-													
-													<div class="swiper-button-next swiper-button-white"></div>
-													<div class="swiper-button-prev swiper-button-white"></div>
-												  </div>
-												  <div class="swiper-container gallery-thumbs list-upload" id="img-user">
-													<div class="swiper-wrapper">
-														<div class="swiper-slide">
-															<img class="" src="assets/images/data/info-1.png" alt="" />
-														  </div>
-														  
-													</div>
-												  </div> -->
-												<!-- <div class="thumb-big" id="img-big">
-
-													<a data-fancybox="user" href="assets/images/data/info-1.png">
-														<img class="" src="assets/images/data/info-1.png" alt="" />
-													</a>
-												</div>
-
-												<ul class="list-upload" id="img-user">
-													<li>
-														<a data-fancybox="user" href="assets/images/data/info-2.png">
-															<img class="" src="assets/images/data/info-2.png" alt="" />
-														</a>
-													</li>
-													<li>
-														<a data-fancybox="user" href="assets/images/data/info-3.png">
-															<img class="" src="assets/images/data/info-3.png" alt="" />
-														</a>
-													</li>
-													<li>
-														<a data-fancybox="user" href="assets/images/data/info-4.png">
-															<img class="" src="assets/images/data/info-4.png" alt="" />
-														</a>
-													</li>
-												</ul>  -->
-												<ul id="lightSlider" >
+											<div class="block-img">												
+												<ul id="lightSlider">
 													<li data-thumb="assets/images/data/info-1.png">
 														<a href="assets/images/data/info-1.png" data-fancybox="gallery">
 															<img src="assets/images/data/info-1.png" alt="ánh chính" />
@@ -117,7 +75,6 @@
 															<img src="assets/images/data/info-4.png" alt="ánh chính" />
 														</a>
 													</li>
-
 												</ul>
 											</div>
 											<!--end cot hinh anh-->
@@ -230,35 +187,35 @@
 				</div>
 			</div>
 		</section>
+		<div id="popup_rules" class="popup popup--default ">
+			<div class="popup__background"></div>
+			<div class="popup__content  ">
+				<div class="popup__wrapper">
+					<h2 class="title title--auth">
+						Thể Lệ
+					</h2>
+					<div class="popup__iframe">
+						<iframe src="../article/article.html" frameborder="0" width="100%"></iframe>
+	
 
-	</div>
-
-
-
-
-
-
-
-
-
-
-
-	<div id="popup_rules" class="popup popup--default ">
-		<div class="popup__background"></div>
-		<div class="popup__content  ">
-			<div class="popup__wrapper">
-				<h2 class="title title--auth">
-					Thể Lệ cuộc thi
-				</h2>
-				<div class="popup__iframe">
-					<iframe src="../article/article.html" frameborder="0" width="100%"></iframe>
-
-
+					</div>
 				</div>
+				<span class="popup__close close">X</span>
 			</div>
-			<span class="popup__close close">X</span>
 		</div>
 	</div>
+
+
+
+
+
+
+
+
+
+
+
+	
 
 	<div id="popup_receive" class="popup popup--default pm__module pm__condition-module">
 		<div class="popup__background"></div>

@@ -32,7 +32,7 @@ html {
 }
 body {
     line-height:1;
-    font-family: 'Kanit-Medium';
+    font-family: 'Kanit-Medium' !important;
     text-align:left
 }
 [tabindex="-1"]:focus:not(:focus-visible) {
@@ -49,9 +49,13 @@ blockquote::after,blockquote::before,q::after,q::before {
     content:none
 }
 table {
+    font-size: 26px;
     border-collapse:collapse;
     border-spacing:0
 }
+tr:nth-child(even) {
+    background-color: #d9eafe;
+  }
 caption {
     caption-side:bottom
 }
@@ -1531,12 +1535,20 @@ hr.split--giant {
     color:#222;
     line-height:1.4
 }
+.article__content .list-rule li {
+    list-style-image: url(./assets/images/_crown_icon.png);
+
+
+}
+.text-red {
+color:#c91414 ;
+}
 .article__content p {
-font-size: 18px;
+font-size: 26pt;
 color: #2528b2;
 }
 .article__content *:not(:only-child):not(li) {
-    margin-bottom:12px
+    margin-bottom:15px
 }
 .article__content ul {
     margin-left:20px
@@ -1552,10 +1564,10 @@ color: #2528b2;
     list-style-type:decimal
 }
 .article__content h2 {
-    font-size:1.4em;
+    font-size:2.6em;
     font-family: 'Kanit-Medium';
     line-height:1.4;
-    color:#d835d5;
+    color:#c72bc4
 }
 .article__content h2:before {
     content:"";
@@ -1565,10 +1577,10 @@ color: #2528b2;
     height:44px
 }
 .article__content h3 {
-    font-size:1.3em;
+    font-size:2.5em;
     font-family: 'Kanit-Medium';
     line-height:1.4;
-    color:#4200ff
+    color:#c72bc4
 }
 .article__content h3:before {
     content:"";
@@ -1578,22 +1590,28 @@ color: #2528b2;
     height:18px
 }
 .article__content h4 {
-    font-size:1.2em;
+    font-size:2.4em;
     font-family: 'Kanit-Medium';
     line-height:1.4;
     color:#c72bc4
 }
 .article__content h5 {
-    font-size:1.1em;
+    font-size:2.3em;
    font-family: 'Kanit-Medium';
     line-height:1.4;
-    color:#c72bc4;
+    color:#c72bc4
 }
 .article__content h6 {
-    font-size:1em;
+    font-size:2em;
     font-family: 'Kanit-Medium';
     line-height:1.4;
     color:#c72bc4
+}
+.article__content b{   
+    color:#c91414;
+    font-size: 26pt;
+    font-family: 'Kanit-Medium';
+    font-weight: normal;
 }
 .article__content a {
     color:#4579c9;
@@ -1641,7 +1659,8 @@ color: #2528b2;
     color:#FFF
 }
 .article__content .table {
-    width:100%
+    width: 80%;
+    margin: auto;
 }
 @media (max-width: 700px) {
     .article__content .table {
@@ -1657,6 +1676,7 @@ color: #2528b2;
     width:100%
 }
 .article__content table td {
+    text-align: center;
     padding:8px;
     border:1px solid #ccc;
     vertical-align:middle
@@ -1666,9 +1686,9 @@ color: #2528b2;
     margin:0 auto 0
 }
 .article__content table thead {
-    background:#c72bc4;
+    background:#4353cd;
     color:#FFF;
-    font-weight:bold
+    font-family: 'Kanit-Medium';
 }
 .article__content table thead tr th {
     padding:12px;
