@@ -2835,7 +2835,7 @@ template {
 
 html {
     overflow-x: hidden;
-    overflow-y: auto
+    overflow-y: hidden
 }
 
 html.popup-opened,
@@ -3309,7 +3309,7 @@ hr.split--giant {
     top: 0;
     right: 0;
     width: calc(100% - 150px);
-    height: 100vh;
+    height: 100%;
     z-index: 500;
     display: flex;
     align-items: center;
@@ -3498,7 +3498,7 @@ body.body-article {
 
 @media (orientation: portrait) {
     .section--frame1 {
-        height: 1800px
+        height: 1500px
     }
 }
 
@@ -4024,11 +4024,18 @@ height: 57px;
     padding: 12px;
     text-align: center
 }
-.rank-1 td:nth-child(1) {
-font-size: 0;
-background: url(./assets/images/icon/top1.png);
-
+.rank__table tr.rank-1 {
+color: #ff5849 !important;
+font-family: 'Kanit-SemiBold';
 }
+.rank__table tr.rank-2 {
+    color: #9c44e0 !important;
+    font-family: 'Kanit-SemiBold';
+    }
+    .rank__table tr.rank-3 {
+        color: #dd9e5b !important;
+        font-family: 'Kanit-SemiBold';
+        }
 .rank__table td {
     height: 75px;   
     position: relative;
@@ -4044,15 +4051,16 @@ background: url(./assets/images/icon/top1.png);
 
 .rank__table tbody tr {
     position: relative;
-    border: 2px solid #FFF
+    color: #5051ce;
+    font-family: 'Kanit';
 }
 
 .rank__table tbody tr:nth-child(odd) {
-    background: #f3f8ff
+    background: #f2feff
 }
 
 .rank__table tbody tr:nth-child(even) {
-    background: #dfebff
+    background: #d9e9fe
 }
 
 .pagination {
@@ -4072,21 +4080,20 @@ background: url(./assets/images/icon/top1.png);
     justify-content: center;
     align-items: center;
     align-content: center;
-    padding: 12px 18px;
-    
+    padding: 12px 18px;   
     background: #283f94;
     color: #FFF;
-    clip-path: polygon(100% 0%, 100% 80%, 98% 100%, 0 100%, 0 20%, 2% 0);
+    clip-path: polygon(20% 0%, 100% 0, 100% 20%, 100% 80%, 80% 100%, 0 100%, 0% 80%, 0% 20%);
     font-size: 24px;
     min-width: 32px
 }
 
 .pagination .page-item:not(.active):hover .page-link {
-    background: #ff2f6a
+    background: #3170ff;
 }
 
 .pagination .page-item.active .page-link {
-    background: #ff2f6a;
+    background: #3170ff;
     
 }
 
@@ -5401,7 +5408,7 @@ p.note-cnnd {
     background-repeat: no-repeat;
     overflow: hidden;
     width: calc(100% - 20px - 5%);
-    height: calc(80vh);
+    height: calc(100% - 60px);
 }
 
 .popup--default .popup__content {
