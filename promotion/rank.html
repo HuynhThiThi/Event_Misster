@@ -44,21 +44,29 @@
 						<div class="main">
 							<div class="main__header">
 								<h1 class="title title--rank">ĐĂNG KÝ DỰ THI</h1>
-								<a href="#popup_rules" data-lightbox class="btni btni--rules btn-position desktop">THỂ LỆ</a>
+								<a href="#popup_rules" data-lightbox class="btni btni--rules btn-position desktop">THỂ
+									LỆ</a>
 							</div>
 							<div class="main__content">
 
 								<div class="rank">
 
 									<div class="rank__filter">
-										<ul class="filter">
+										<div class="dropdown-select">
+											<a href="#" class="js-link">Chọn game<i class="fa fa-chevron-down"></i></a>
+											<ul class="dropdown-list">
+												<li class="list-item">Liên quân Mobile</li>
+												<li class="list-item">Option 1</li>
+											</ul>
+										</div>
+										<!-- <ul class="filter">
 											<li>
 												<select name="data[game]" id="game">
 													<option value="">Chọn game</option>
 													<option value="">Võ lâm truyền kỳ 1 Mobile</option>
 												</select>
 											</li>
-										</ul>
+										</ul> -->
 									</div>
 									<div class="rank__detail">
 										<table width="100%" class="rank__table">
@@ -66,9 +74,8 @@
 												<tr>
 													<th class="stt">TOP</th>
 													<th class="nhanvat">Nhân vật</th>
-													<th class="server">Bang Hội</th>
-													<th class="server">Máy chủ</th>
-													
+													<th class="group desktop">Bang Hội</th>
+													<th class="server desktop">Máy chủ</th>
 													<th class="flower">Hoa hồng đã tặng</th>
 												</tr>
 											</thead>
@@ -78,8 +85,8 @@
 														<img src="./assets/images/icon/top1.png" alt="top 1">
 													</td>
 													<td>Nguyễn Trần Mạnh Hoàng </td>
-													<td>Độc cô bang</td>
-													<td>S22</td>
+													<td class="desktop">Độc cô bang</td>
+													<td class="desktop">S22</td>
 													<td>32000</td>
 												</tr>
 												<tr class="rank-2">
@@ -87,8 +94,8 @@
 														<img src="./assets/images/icon/top2.png" alt="top 2">
 													</td>
 													<td>Nguyễn Trần Mạnh Hoàng </td>
-													<td>Độc cô bang</td>
-													<td>S22</td>
+													<td class="desktop">Độc cô bang</td>
+													<td class="desktop">S22</td>
 													<td>32000</td>
 												</tr>
 												<tr class="rank-3">
@@ -96,74 +103,93 @@
 														<img src="./assets/images/icon/top3.png" alt="top 3">
 													</td>
 													<td>Nguyễn Trần Mạnh Hoàng </td>
-													<td>Độc cô bang</td>
-													<td>S22</td>
+													<td class="desktop">Độc cô bang</td>
+													<td class="desktop">S22</td>
 													<td>32000</td>
 												</tr>
 												<tr>
 													<td>4</td>
 													<td>Nguyễn Trần Mạnh Hoàng </td>
-													<td>Độc cô bang</td>
-													<td>S22</td>
+													<td class="desktop">Độc cô bang</td>
+													<td class="desktop">S22</td>
 													<td>32000</td>
 												</tr>
 												<tr>
 													<td>5</td>
 													<td>Nguyễn Trần Mạnh Hoàng </td>
-													<td>Độc cô bang</td>
-													<td>S22</td>
+													<td class="desktop">Độc cô bang</td>
+													<td class="desktop">S22</td>
 													<td>32000</td>
 												</tr>
 												<tr>
 													<td>6</td>
 													<td>Nguyễn Trần Mạnh Hoàng </td>
-													<td>Độc cô bang</td>
-													<td>S22</td>
+													<td class="desktop">Độc cô bang</td>
+													<td class="desktop">S22</td>
 													<td>32000</td>
 												</tr>
 												<tr>
 													<td>7</td>
 													<td>Nguyễn Trần Mạnh Hoàng </td>
-													<td>Độc cô bang</td>
-													<td>S22</td>
+													<td class="desktop">Độc cô bang</td>
+													<td class="desktop">S22</td>
 													<td>32000</td>
 												</tr>
-												
+												<tr>
+													<td>8</td>
+													<td>Nguyễn Trần Mạnh Hoàng </td>
+													<td class="desktop">Độc cô bang</td>
+													<td class="desktop">S22</td>
+													<td>32000</td>
+												</tr>
+												<tr>
+													<td>9</td>
+													<td>Nguyễn Trần Mạnh Hoàng </td>
+													<td class="desktop">Độc cô bang</td>
+													<td class="desktop">S22</td>
+													<td>32000</td>
+												</tr>
+												<tr>
+													<td>10</td>
+													<td>Nguyễn Trần Mạnh Hoàng </td>
+													<td class="desktop">Độc cô bang</td>
+													<td class="desktop">S22</td>
+													<td>32000</td>
+												</tr>
 											</tbody>
 										</table>
 										<nav>
 											<ul class="pagination">
-												<li class="page-item">
-													<a class="page-link" href="" >
+												<li class="page-item btn-first">
+													<a class="page-link" href="">
 														Đầu
 													</a>
 												</li>
-												<li class="page-item">
+												<li class="page-item btn-prev">
 													<a class="page-link" href="" aria-label="Previous">
 														<span aria-hidden="true">Trang trước</span>
-
 													</a>
 												</li>
-												<li class="page-item ">
+												<li class="page-item btn-number">
 													<a class="page-link" href="">1</a>
 												</li>
-												<li class="page-item active">
+												<li class="page-item btn-number active">
 													<a class="page-link" href="">2</a>
 												</li>
-												<li class="page-item ">
+												<li class="page-item btn-number">
 													<a class="page-link" href="">3</a>
 												</li>
-												<li class="page-item ">
+												<li class="page-item btn-number">
 													<a class="page-link" href="">4</a>
 												</li>
-												<li class="page-item">
+												<li class="page-item btn-next">
 													<a class="page-link" href="" aria-label="Next">
 														<span aria-hidden="true">Trang Sau</span>
 
 													</a>
 												</li>
-												<li class="page-item">
-													<a class="page-link" href="" >
+												<li class="page-item btn-last">
+													<a class="page-link" href="">
 														Cuối
 													</a>
 												</li>
@@ -195,19 +221,13 @@
 		</div>
 	</div>
 
-	<script>document.write('<script src="http://'
-			+ (location.host || 'localhost').split(':')[0]
-			+ ':35729/livereload.js"></'
-			+ 'script>')</script>
-
-	<script>
-		// Init Promotion 
-		let domainKM = '';
-		let urlPromotion = domainKM; 
-	</script>
 
 	<script type="text/javascript" src="1.promotion.bundle.js"></script>
 	<script type="text/javascript" src="promotion.bundle.js"></script>
+	<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js'></script>
+	<script src='https://cdnjs.cloudflare.com/ajax/libs/lightslider/1.1.6/js/lightslider.min.js'></script>
+	<script src='https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js'></script>
+	<script type="text/javascript" src="slider-funtion.js"></script>
 </body>
 
 </html>

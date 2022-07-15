@@ -13,16 +13,13 @@
     <div id="wrapper" class="wrapper wrapper--landing floatingDesktopTopLeft floatingMobileTopLeft">
         <section id="frame1" class="section section--frame1 frame1 scrollFrame">
             <div class="section__background">
-                <img data-src="assets/images/bg/bg-horizontal.png" class="desktop lazyload" alt="">
-                <img data-src="assets/images/bg/bg-vertical.jpg" class="mobile lazyload" alt="">
-            </div>
+				<img data-src="assets/images/bg/bg-horizontal.png" class="desktop lazyload" alt="">
+				<img data-src="assets/images/bg/bg-vertical.png" class="mobile lazyload" alt="">
+			</div>
             <div class="section__content">
                 <div class="container">
                     <div class="frame1__inner">
-
-
                         <div id="topfloat" class="topfloat ">
-
                             <div id="topnav" class="topnav ">
                                 <ul>
                                     <li>
@@ -68,19 +65,24 @@
                                             </div>
                                         </li> -->
                                             <li>
-                                                <select name="data[sort]" id="sort">
-                                                    <option value="">Sắp Xếp</option>
-                                                    <option value="">Ngẫu Nhiên</option>
-                                                    <option value="">Theo Hạng</option>
-                                                </select>
+                                                <div class="dropdown-select" id="sort">
+                                                    <a href="#" class="js-link">Sắp Xếp</a>
+                                                    <ul class="dropdown-list">
+                                                        <li class="list-item">Ngẫu Nhiên</li>
+                                                        <li class="list-item">Theo Hạng</li>
+                                                    </ul>
+                                                </div>                                               
                                             </li>
                                             <li>
-                                                <select name="data[gender]" id="gender">
-                                                    <option value="">Chọn giới tính</option>
-                                                    <option value="">Nam </option>
-                                                    <option value="">Nữ </option>
-                                                </select>
+                                                <div class="dropdown-select" id="gender">
+                                                    <a href="#" class="js-link">Chọn giới tính</a>
+                                                    <ul class="dropdown-list">
+                                                        <li class="list-item">Nam</li>
+                                                        <li class="list-item">Nữ</li>
+                                                    </ul>
+                                                </div>                                               
                                             </li>
+                                           
                                             <li>
                                                 <select name="data[game]" id="game">
                                                     <option value="">Võ lâm truyền kỳ 1 Mobile</option>
@@ -379,49 +381,35 @@
                     </div>
                 </div>
         </section>
-    </div>
-
-
-
-
-
-
-
-
-
-
-    <div id="popup_rules" class="popup popup--default ">
-        <div class="popup__background"></div>
-        <div class="popup__content  ">
-            <div class="popup__wrapper">
-                <h2 class="title title--auth">
-                    Thể Lệ cuộc thi
-                </h2>
-                <div class="popup__iframe">
-                    <iframe src="../article/article.html" frameborder="0"></iframe>
-
-
+        <div id="popup_rules" class="popup popup--default ">
+            <div class="popup__background"></div>
+            <div class="popup__content  ">
+                <div class="popup__wrapper">
+                    <h2 class="title title--auth">
+                        Thể Lệ
+                    </h2>
+                    <div class="popup__iframe">
+                        <iframe src="../article/article.html" frameborder="0"></iframe>
+    
+    
+                    </div>
                 </div>
+                <span class="popup__close close">X</span>
             </div>
-            <span class="popup__close close">X</span>
         </div>
     </div>
+   
 
 
 
-    <script>document.write('<script src="http://'
-            + (location.host || 'localhost').split(':')[0]
-            + ':35729/livereload.js"></'
-            + 'script>')</script>
-
-    <script>
-        // Init Promotion 
-        let domainKM = '';
-        let urlPromotion = domainKM; 
-    </script>
-
+  
+      
     <script type="text/javascript" src="1.promotion.bundle.js"></script>
-    <script type="text/javascript" src="promotion.bundle.js"></script>
+	<script type="text/javascript" src="promotion.bundle.js"></script>
+	<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js'></script>
+	<script src='https://cdnjs.cloudflare.com/ajax/libs/lightslider/1.1.6/js/lightslider.min.js'></script>
+	<script src='https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js'></script>
+	<script type="text/javascript" src="slider-funtion.js"></script>
 </body>
 
 </html>

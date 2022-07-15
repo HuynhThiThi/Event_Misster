@@ -1,6 +1,5 @@
-$ = jQuery;
+
 $( document ).ready(function() {
-  
     $h_slider_options =  {
       gallery: true,
       item: 1,
@@ -10,9 +9,7 @@ $( document ).ready(function() {
       galleryMargin: 15,
      thumbMargin: 20,
       }; 
- 
   h_slider = $('#lightSlider').lightSlider($h_slider_options);
- 
   $selector = '#lightSlider li:not(".clone") a';
   $selector += ',#lightSliderVertical li:not(".clone") a';
   $().fancybox({
@@ -50,9 +47,31 @@ $( document ).ready(function() {
       '<div class="icon-next">icon</div>' +
       "</button>",
     }
+  }); 
+});
+$(function() {
+  var list = $('.dropdown-list');
+  var link = $('.js-link');
+  link.click(function (e) {
+    e.preventDefault();
+    list.slideToggle(200).addClass("active");
+    console.log("dfdf");
+  });
+  list.find('li').click(function () {
+    var text = $(this).html();
+    var icon = '<i class="fa fa-chevron-down"></i>';
+    var hClass = list.find('li').hasClass('active');
+    if (hClass) {
+      list.find('li').removeClass("active");
+    }else {
+      list.find('li').addClass("active");
+    }
+    
+    link.html(text + icon).addClass("active");
+    list.slideToggle(200).addClass("active");
+    
   });
 });
- 
 // $( window ).resize(function() {
 // //  slider.destroy();
 //  h_slider = $('#ocassions-slider').lightSlider(h_slider_options);
