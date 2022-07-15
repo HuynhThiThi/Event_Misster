@@ -20,18 +20,7 @@ $( document ).ready(function() {
     buttons : [          
       'close'
     ],
-    baseTpl:
-    '<div class="fancybox-container" role="dialog" tabindex="-1">' +
-    '<div class="fancybox-bg"></div>' +
-    '<div class="fancybox-inner">' +
-    '<div class="fancybox-infobar">' +
-    "</div>" +
-    '<div class="fancybox-toolbar">{{buttons}}</div>' +
-    '<div class="fancybox-navigation">{{arrows}}</div>' +
-    '<div class="fancybox-stage"></div>' +
-    '<div class="fancybox-caption"></div>' +
-    "</div>" +
-    "</div>",
+    parentEl: '.wrapper',
     btnTpl: {
       close:
       '<button data-fancybox-close class="fancybox-button fancybox-button--close" title="{{CLOSE}}">' +

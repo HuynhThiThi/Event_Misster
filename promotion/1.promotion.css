@@ -4425,7 +4425,7 @@ body.compensate-for-scrollbar {
   right: 0;
   left: auto;
   width: calc(100% - 150px);
-  height: 100vh;
+  height: 100%;
   outline: none;
   position: fixed;
   -webkit-tap-highlight-color: transparent;   
